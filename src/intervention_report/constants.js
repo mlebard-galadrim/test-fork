@@ -1,0 +1,3 @@
+export const PIPE_INTERVENTION_REPORT_SELECT_INTERVENTIONS = 'pipe_intervention_report_select_interventions';
+export const PIPE_INTERVENTION_REPORT_SET_INFO = 'pipe_intervention_report_set_info';
+export const PIPE_INTERVENTION_REPORT_SUP_UP = 'pipe_intervention_report_sup_up';
