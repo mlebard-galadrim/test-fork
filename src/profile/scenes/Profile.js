@@ -11,12 +11,12 @@ import Icon from 'k2/app/modules/common/components/Icon';
 import Loader from 'k2/app/modules/common/components/Loader';
 import { changeLanguage, logout, synchronize } from '../../authentication/actions/authenticationActions';
 import { margin } from 'k2/app/modules/common/styles/utils';
-import { COLOR_PRIMARY, COLOR_WARNING } from 'k2/app/modules/common/styles/vars';
 import IconBadge from 'k2/app/modules/common/components/IconBadge';
 import ModalView from 'k2/app/modules/common/components/modal/ModalView';
 import { Button } from '../../common/components/form';
 import Copyright from 'k2/app/modules/common/components/Copyright';
 import MainListView from 'k2/app/modules/common/components/list/MainListView';
+import SomethingOrOther from 'package';
 import Lang from '../models/Lang';
 import AppVersionGuard from 'k2/app/modules/version/components/AppVersionGuard';
 
@@ -29,6 +29,7 @@ class Profile extends Component {
     synchronizing: PropTypes.bool.isRequired,
     userProfile: PropTypes.shape(),
     lastSynchronization: PropTypes.number,
+    packageProvider: PropTypes.shape();
     errorCode: PropTypes.string,
     localModificationsCount: PropTypes.number.isRequired,
     selectedLang: PropTypes.string.isRequired,
